@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hyperlink - Halaman 1</title> 
+</head>
+<body>
+
+<p>Klik <a href="admin/halaman2.html">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+
+<!-- Cara untuk berpindah ke bagian lain di halaman lain  -->
+
+<p><a href="halaman3.html#bagian1">Ke Halaman 3, Bagian 1</a></p> 
+<p><a href="halaman3.html#bagian2">Ke Halaman 3, Bagian 2</a></p>
+<p><a href="halaman3.html#bagian3">Ke Halaman 3, Bagian 3</a></p>
+
+<hr>
+
+<!-- Cara untuk mengklik link dan membukanya di tab baru, dengan menggunakan atribut target dengan value "_blank" yaitu target="_blank" -->
+
+<p>Klik <a href="admin/halaman2.html" target="_blank">disini</a> untuk mengetahui informasi lebih lanjut. (1)</p>
+
+<!-- Jika value dari target itu kosong yaitu target="", maka yang dipanggil yaitu "_self" yang berarti mengklik link dan membukanya di tab yang sama -->
+
+</body>
+</html>
+
+<!-- Note:
+
+Mempelajari hyperlink/link/weblink,
+hyperlink dibuat dengan menggunakan tag <a> (anchor) yang berfungsi untuk menghubungkan dari 1 halaman ke halaman lain.
+
+Untuk menjadi sebuah hyperlink, dibutuhkan 1 atribut yang dinamakan "href" dinama nanti isinya bisa terdapat:
+
+1. External link (link ke website lain), seperti "http://www.google.com", "http://www.twitter.com", dsb.
+Contoh:
+
+<p>Klik <a href="http://www.twitter.com">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+
+Ini berarti bahwa ketika "disini" diklik, maka kita akan dibawa ke twitter.com 
+
+2. Internal link (halaman website lain yang ada di dalam domain kita atau satu domain dengan website yang kita buat), seperti halaman2.html, halaman3.html, dsb.
+Contoh:
+
+<p>Klik <a href="halaman2.html">disini</a> untuk mengetahui informasi lebih lanjut.</p>
+
+Ini berarti bahwa ketika "disini" diklik, maka kita akan dibawa ke file halaman2.html 
+
+3. Relative URL
+
+Penjelasan: Jika file halaman2.html dimasukkkan ke dalam folder baru 'admin', 
+maka dengan kode "<a href="halaman2.html">" akan menjadi sebuah error karena file halaman2.html sudah pindah ke dalam folder "admin". 
+Maka untuk bisa berjalan normal, maka dalam kode nya perlu ditambahkan folder 'admin' yaitu "<a href="admin/halaman2.html">".
+
+Dan jika ingin dari file "halaman2.html" kembali ke file "halaman1.html", maka kode dari halaman2.html yaitu "<a href="halaman1.html">Kembali Ke Halaman 1</a>" akan menjadi sebuah error karena halaman2.html berada di folder "admin" dan kode "href='halaman1.html'" tersebut berarti mencari halaman1.html di folder yang sama (admin) sedangkan halaman1.html tidak berada di folder "admin" tetapi berada di 1 folder diatasnya.
+	Maka untuk bisa berjalan normal, kode nya perlu diganti menjadi "<a href="../halaman1.html">" yang berarti naik 1 folder diatasnya lalu cari halaman1.html -->

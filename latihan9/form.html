@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+
+<form>
+	<!-- Membuat text field yang bertujuan untuk memasukkan username,
+		isi dari "for" dan "id" harus sama, kedua "label" dan "input" dibawah ini
+		berpasangan -->
+	<label for="username">username : </label>
+	<input type="text" id="username">
+		<br>
+
+	<!-- Membuat text field yang bertujuan untuk memasukkan password,
+		isi dari "for" dan "id" harus sama, kedua "label" dan "input" dibawah ini
+		berpasangan -->
+	<label for="password">password :</label>
+	<input type="password" id="password">
+		<br>
+
+	<!-- Membuat radio button untuk pemilihan jenis kelamin, diperlukan atribut
+		"name" untuk menandakan bahwa kedua radio button dibawah ini merupakan
+		satu grup sehingga hanya dapat memilih salah satu dari kedua opsi yang
+		telah diberikan  -->
+	<input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+	<input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+		<br>
+
+	<!-- Membuat checkbox pilihan hobi, isi dari "for" dan "id" harus sama -->
+	<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+	<input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+	<input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+		<br>
+
+	<!-- Mirip text field, tetapi ukurannya lebih besar dan kita dapat mengisinya
+		dengan jumlah karakter yang tidak dibatasi. Dapat menuliskan artikel,
+		testimoni, komentar, dsb -->
+	<textarea></textarea>
+		<br>
+
+	<!-- Digunakan untuk membuat drop down/combo box, dengan pilihan-pilihannya
+		menggunakan tag <option>. Biasa digunakan untuk memilih kota kelahiran,
+		dsb -->
+	<select>
+		<option>Bandung</option>
+		<option>Semarang</option>
+		<option>Yogyakarta</option>
+		<option>Jakarta</option>
+	</select>
+		<br>
+	
+
+	<!-- Membuat button dimana menekan/mengklik tombol supaya data yang telah
+		kita isi dapat terkirim, dengan menggunakan <button> type "submit"  -->
+	<button type="submit">Kirim!</button>
+
+</form>
+
+</body>
+</html>
+
+
+<!-- Note:
+
+Hari ini mempelajari tentang form (sebuah tag yang kita gunakan untuk mengkoleksi inputan dari user). Contoh paling umum yang sering dijumpai yaitu form login.
+
+Elemen-elemen dalam form:
+1. Input (berisi macam-macam, dapat membuat text field, radio button, combo box, password, checkbox, dsb)
+2. Textarea (mirip text field, tetapi lebih banyak yang bisa kita isikan yaitu dengan jumlah karakter yang tidak dibatasi)
+3. Select (digunakan untuk membuat drop down atau combo box)
+4. Button (tombol untuk mengirimkan data)
+5. Label (digunakan untuk menandai sebuah elemen input)
+
+
+Isi dari atribut "type" input yaitu (<input type=""):
+- Text (untuk membuat text field)
+- Password 
+- Radio (radio button), dimana berbentuk lingkaran kecil 
+- Checkbox
+
+
+Jika ingin memilih salah satu dari opsi yang telah diberikan, maka disarankan untuk 
+menggunakan radio button. Namun jika ingin memilih lebih dari satu dari opsi yang 
+telah diberikan, maka disarankan untuk menggunakan checkbox.
+
+-->
